@@ -476,12 +476,73 @@ section{
     display: flex;
 }
 
-
-
-
-
-
 /* gallery section style ends */
+
+/* menu section styles start */
+
+.menu{
+    background: var(--light-bg);
+}
+
+.menu .slide .title{
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+    background: var(--peru);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.menu .slide .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+        padding-bottom: 4rem;
+}
+
+.menu .slide .box-container .box{
+    flex: 1 1 41rem;
+    background: var(--white);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.menu .slide .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.menu .slide .box-container .box p{
+    font-size: 1.6rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+
+.menu .slide .box-container .box .price{
+    font-size: 2.5rem;
+    color: var(--peru);
+}
+
+.menu .slide .box-container .box:hover{
+    cursor: pointer;
+    transform: scale(.9);
+}
+
+
+/* menu section style ends */
+
+
+
+
+
+
+
 
 
 
@@ -558,6 +619,11 @@ section{
 .swiper-button-prev{
     top: initial;
     bottom: 1rem;
+}
+
+.menu .slide .box-container .box{
+    flex-flow: column;
+    text-align: center;
 }
 
 }

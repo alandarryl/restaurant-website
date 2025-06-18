@@ -73,7 +73,17 @@ previewContainer.querySelector('#close-preview').onclick = () => {
 }
 
 
-
+var swiper = new Swiper(".menu-slider", {
+    loop: true,
+    autoHeight: true,
+    grabCursor: true,
+    centeredSlides:true,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
 
 
 
